@@ -1,7 +1,8 @@
 'use strict'
 
 const numbersContainer = document.getElementById('numbers')
-const maxNumber = 10
+const maxNumber = 9
+const minNumber = 2
 const answersCount = 4
 
 const state = { check: 0 }
@@ -16,8 +17,8 @@ sayCurrentProblem(x, y)
 function newProblem() {
     numbersContainer.innerHTML = ''
 
-    const x = Math.floor(Math.random() * maxNumber)
-    const y = Math.floor(Math.random() * maxNumber)
+    const x = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber)
+    const y = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber)
 
     document.getElementById('rus-button').onclick = () => setRus(x, y)
     document.getElementById('eng-button').onclick = () => setEng(x, y)
@@ -100,6 +101,12 @@ function getYes(lang) {
             'Пупырка, ты - чудо!',
             'Квакушка, мастер математики!',
             'Богатая преступница умеет считать!',
+            'Молодец как огурец!',
+            'Это было просто супер!',
+            'Классно!',
+            'Четко!',
+            'Обалдеть!',
+            'Красота!',
         ],
     }
 

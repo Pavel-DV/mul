@@ -7,11 +7,11 @@ const answersCount = 4
 const state = { check: 0 }
 
 const utter = new SpeechSynthesisUtterance()
+utter.lang = 'ru-RU'
 
 const { x, y } = newProblem()
 sayCurrentProblem(x, y)
 
-utter.lang = 'ru-RU'
 
 function newProblem() {
     numbersContainer.innerHTML = ''

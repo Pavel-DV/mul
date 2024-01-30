@@ -1,0 +1,68 @@
+body {
+    font-family: Calibri, "Segoe UI", sans-serif;
+}
+
+#numbers {
+    display: inline-block;
+    float: left;
+}
+
+.button {
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    text-align: center;
+    font-size: 100px;
+    background-size: cover;
+    cursor: pointer;
+    margin: 15px;
+    display: inline-block;
+    float: left;
+}
+
+.number-element {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: gray;
+    background-blend-mode: screen;
+}
+
+.red {
+    color: blue;
+    background-image: url("../images/flower_red.png");
+}
+
+.green {
+    color: red;
+    background-image: url("../images/flower_green.png");
+}
+
+.first-in-line {
+    clear: left;
+}
+
+.rus-button {
+    background-image: url("../images/rus_flag.jpg");
+}
+
+.eng-button {
+    background-image: url("../images/us_flag.jpg");
+    clear: both;
+}
+
+.play-button {
+    text-align: center;
+    width: 160px;
+    height: 160px;
+    background-color: red;
+}
+
+#flags {
+    display: inline-block;
+}
+
+#check {
+    font-size: 100px;
+    margin: 15px;
+    color: purple;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
